@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About – Miami FX</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#22d3ee',
+              dark: '#06b6d4',
+            }
+          },
+          boxShadow: {
+            glow: '0 0 0 3px rgba(34,211,238,0.25)'
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    html { font-family: Inter, system-ui, sans-serif; }
+    .container-pad { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+    .glass { backdrop-filter: blur(8px); background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03)); border: 1px solid rgba(255,255,255,0.08); }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-40">
+    <div class="glass">
+      <div class="container-pad flex items-center justify-between py-3">
+        <a href="index.html" class="flex items-center gap-2 group">
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-tr from-brand to-brand-dark text-slate-900 font-black">FX</span>
+          <span class="font-semibold tracking-tight group-hover:text-brand transition">Miami FX</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm">
+          <a href="about.html" class="text-brand">About</a>
+          <a href="features.html" class="hover:text-brand">Features</a>
+          <a href="pricing.html" class="hover:text-brand">Pricing</a>
+          <a href="faq.html" class="hover:text-brand">FAQ</a>
+          <a href="contact.html" class="hover:text-brand">Contact</a>
+        </nav>
+        <div class="hidden md:flex items-center gap-3">
+          <a href="pricing.html" class="px-4 py-2 rounded-xl border border-slate-800 hover:border-brand/60 hover:shadow-glow transition">See Plans</a>
+          <a href="demo.html" class="px-4 py-2 rounded-xl bg-brand text-slate-900 font-semibold hover:shadow-glow transition">Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="absolute -z-10 inset-0 bg-[radial-gradient(80%_60%_at_50%_-10%,rgba(34,211,238,0.12),transparent_60%)]"></div>
+      <div class="container-pad py-20 text-center max-w-3xl mx-auto" data-aos="fade-up">
+        <h1 class="text-4xl md:text-6xl font-extrabold">About <span class="text-brand">Miami FX</span></h1>
+        <p class="mt-5 text-slate-300 text-lg">We’re a team of creators, developers, and designers passionate about building crisp, high-converting web experiences.</p>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="container-pad py-20 grid md:grid-cols-2 gap-12 items-center">
+      <div data-aos="fade-right">
+        <h2 class="text-3xl font-bold">Our Mission</h2>
+        <p class="mt-4 text-slate-300">At Miami FX, our mission is to empower startups and creators with tools that help them launch faster and stand out. We believe design and code should work seamlessly together to tell your story and convert visitors into loyal customers.</p>
+      </div>
+      <div class="rounded-3xl overflow-hidden border border-slate-800" data-aos="fade-left">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop" alt="Team working" class="w-full h-full object-cover">
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="container-pad py-20" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-center">Our Values</h2>
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 rounded-3xl border border-slate-800 bg-slate-900/40 hover:border-brand/60 hover:scale-105 transition duration-500" data-aos="zoom-in">
+          <h3 class="font-semibold text-lg mb-2">⚡ Speed</h3>
+          <p class="text-slate-300">Move fast without breaking the details. Ship your vision in days, not months.</p>
+        </div>
+        <div class="p-6 rounded-3xl border border-slate-800 bg-slate-900/40 hover:border-brand/60 hover:scale-105 transition duration-500" data-aos="zoom-in" data-aos-delay="100">
+          <h3 class="font-semibold text-lg mb-2">🎨 Craft</h3>
+          <p class="text-slate-300">Every pixel matters. We obsess over clean, accessible, and responsive UI.</p>
+        </div>
+        <div class="p-6 rounded-3xl border border-slate-800 bg-slate-900/40 hover:border-brand/60 hover:scale-105 transition duration-500" data-aos="zoom-in" data-aos-delay="100">
+          <h3 class="font-semibold text-lg mb-2">🤝 Trust</h3>
+          <p class="text-slate-300">Transparent pricing, lifetime updates, and support that cares about your success.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="container-pad py-20">
+      <h2 class="text-3xl font-bold text-center" data-aos="fade-up">Meet the Team</h2>
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 rounded-3xl border border-slate-800 bg-slate-900/40 text-center hover:scale-105 hover:border-brand/60 transition duration-500" data-aos="fade-up">
+          <img src="https://i.pravatar.cc/128?img=12" alt="Founder" class="mx-auto rounded-full h-24 w-24 ring-2 ring-slate-900">
+          <h3 class="mt-4 font-semibold">Jordan Lee</h3>
+          <p class="text-sm text-slate-400">Founder & Product Lead</p>
+        </div>
+        <div class="p-6 rounded-3xl border border-slate-800 bg-slate-900/40 text-center  hover:scale-105 hover:border-brand/60 transition duration-500" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://i.pravatar.cc/128?img=32" alt="Engineer" class="mx-auto rounded-full h-24 w-24 ring-2 ring-slate-900">
+          <h3 class="mt-4 font-semibold">Amira Khan</h3>
+          <p class="text-sm text-slate-400">Frontend Engineer</p>
+        </div>
+        <div class="p-6 rounded-3xl border border-slate-800 bg-slate-900/40 text-center  hover:scale-105 hover:border-brand/60 transition duration-500" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://i.pravatar.cc/128?img=56" alt="Designer" class="mx-auto rounded-full h-24 w-24 ring-2 ring-slate-900">
+          <h3 class="mt-4 font-semibold">Luis Martinez</h3>
+          <p class="text-sm text-slate-400">UI/UX Designer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="container-pad py-20 text-center" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold">Let’s build something great together</h2>
+      <p class="text-slate-300 mt-3">Ready to ship faster with Miami FX?</p>
+      <a href="pricing.html" class="mt-6 inline-block px-6 py-3 rounded-2xl bg-brand text-slate-900 font-semibold hover:shadow-glow transition">See Plans</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800">
+    <div class="container-pad py-10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-tr from-brand to-brand-dark text-slate-900 font-black">FX</span>
+        <span>© <span id="year"></span> Miami FX</span>
+      </div>
+      <nav class="flex items-center gap-4">
+        <a href="features.html" class="hover:text-brand">Features</a>
+        <a href="pricing.html" class="hover:text-brand">Pricing</a>
+        <a href="faq.html" class="hover:text-brand">FAQ</a>
+        <a href="contact.html" class="hover:text-brand">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Miami Frontend Xperience Dev Studio Experts" />
+  <meta name="description" content="A crisp, high-converting startup landing page template. Built with TailwindCSS. Sections: Hero, Features, Demo, Pricing, FAQ, Testimonials, Contact." />
+  <meta property="og:title" content="Miami FX – Startup Landing" />
+  <meta property="og:description" content="Modern, responsive, single-file landing page starter." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://dummyimage.com/1200x630/0f172a/ffffff&text=Miami+FX+Landing" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>Miami FX – Startup Landing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#22d3ee', // cyan-400
+              dark: '#06b6d4',
+            }
+          },
+          boxShadow: {
+            glow: '0 0 0 3px rgba(34,211,238,0.25)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: dark light; }
+    html { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
+    .glass { backdrop-filter: blur(8px); background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03)); border: 1px solid rgba(255,255,255,0.08); }
+    .container-pad { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <!-- Skip link -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:rounded-xl focus:bg-slate-900 focus:ring-2 focus:ring-brand">Skip to content</a>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40">
+    <div class="glass">
+      <div class="container-pad flex items-center justify-between py-3">
+        <a href="#" class="flex items-center gap-2 group">
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-tr from-brand to-brand-dark text-slate-900 font-black">FX</span>
+          <span class="font-semibold tracking-tight group-hover:text-brand transition">Miami FX</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm">
+          <a href="about.html" class="hover:text-brand">About</a>
+          <a href="features.html" class="hover:text-brand">Features</a>
+          <a href="pricing.html" class="hover:text-brand">Pricing</a>
+          <a href="faq.html" class="hover:text-brand">FAQ</a>
+          <a href="contact.html" class="hover:text-brand">Contact</a>
+        </nav>
+        <div class="hidden md:flex items-center gap-3">
+          <a href="pricing.html" class="px-4 py-2 rounded-xl border border-slate-800 hover:border-brand/60 hover:shadow-glow transition">See Plans</a>
+          <a href="demo.html" class="px-4 py-2 rounded-xl bg-brand text-slate-900 font-semibold hover:shadow-glow transition">Live Demo</a>
+        </div>
+        <button id="mobileBtn" class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-xl border border-slate-800 hover:border-brand/60" aria-label="Open menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"/></svg>
+        </button>
+      </div>
+      <div id="mobileMenu" class="md:hidden hidden border-t border-slate-800">
+        <div class="container-pad py-3 grid gap-2 text-sm">
+          <a href="#features" class="py-2">Features</a>
+          <a href="#pricing" class="py-2">Pricing</a>
+          <a href="#faq" class="py-2">FAQ</a>
+          <a href="#contact" class="py-2">Contact</a>
+          <a href="#demo" class="py-2 rounded-lg bg-brand text-slate-900 font-semibold text-center mt-2">Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="absolute -z-10 inset-0 bg-[radial-gradient(80%_60%_at_50%_-10%,rgba(34,211,238,0.12),transparent_60%)]"></div>
+      <div class="container-pad py-20 md:py-28 grid md:grid-cols-2 items-center gap-12">
+        <div>
+          <p class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-brand">
+            <span class="h-1.5 w-1.5 rounded-full bg-brand"></span> Built by Miami FX
+          </p>
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mt-4">Launch faster with a landing page that actually <span class="text-brand">converts</span>.</h1>
+          <p class="mt-5 text-slate-300 text-lg">A clean, responsive template with production-ready sections and accessible components. Copy, tweak, ship.</p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-3">
+            <a href="#pricing" class="px-6 py-3 rounded-2xl bg-brand text-slate-900 font-semibold hover:shadow-glow text-center">Get Started</a>
+            <a href="#demo" class="px-6 py-3 rounded-2xl border border-slate-800 hover:border-brand/60 text-center">View Demo</a>
+          </div>
+          <div class="mt-6 flex items-center gap-4 text-xs text-slate-400">
+            <div class="flex -space-x-2">
+              <img class="h-8 w-8 rounded-full ring-2 ring-slate-900" src="https://i.pravatar.cc/64?img=12" alt="user"/>
+              <img class="h-8 w-8 rounded-full ring-2 ring-slate-900" src="https://i.pravatar.cc/64?img=5" alt="user"/>
+              <img class="h-8 w-8 rounded-full ring-2 ring-slate-900" src="https://i.pravatar.cc/64?img=8" alt="user"/>
+            </div>
+            <span>Trusted by 1,200+ creators</span>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-video rounded-3xl border border-slate-800 overflow-hidden shadow-2xl shadow-slate-900/40">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1600&auto=format&fit=crop" alt="App preview screenshot" class="w-full h-full object-cover" />
+          </div>
+          <div class="absolute -bottom-6 -left-6 bg-slate-900/80 border border-slate-800 rounded-2xl p-4 backdrop-blur">
+            <p class="text-xs text-slate-300">⚡ Lifetime updates included</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logos -->
+    <section aria-label="as seen in" class="py-8 border-y border-slate-800/60 bg-slate-950/50">
+      <div class="container-pad grid grid-cols-2 md:grid-cols-5 items-center gap-6 opacity-70">
+        <img src="https://dummyimage.com/120x36/0b1220/ffffff&text=TechOne" alt="TechOne" class="mx-auto h-9 w-auto"/>
+        <img src="https://dummyimage.com/120x36/0b1220/ffffff&text=DevWire" alt="DevWire" class="mx-auto h-9 w-auto"/>
+        <img src="https://dummyimage.com/120x36/0b1220/ffffff&text=Pixel+Hub" alt="Pixel Hub" class="mx-auto h-9 w-auto"/>
+        <img src="https://dummyimage.com/120x36/0b1220/ffffff&text=Code+Mag" alt="Code Mag" class="mx-auto h-9 w-auto"/>
+        <img src="https://dummyimage.com/120x36/0b1220/ffffff&text=Sphere" alt="Sphere" class="mx-auto h-9 w-auto"/>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="container-pad py-20">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl md:text-4xl font-bold">Everything you need to ship faster</h2>
+        <p class="text-slate-300 mt-3">Pre-built sections and minimal JS you can drop into any stack. Lightweight, accessible, and easy to customize.</p>
+      </div>
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Feature card -->
+        <article class="p-6 rounded-3xl border border-slate-800 bg-gradient-to-b from-slate-900/60 to-slate-900/30">
+          <div class="h-10 w-10 rounded-xl bg-slate-800 flex items-center justify-center mb-4">💎</div>
+          <h3 class="font-semibold text-lg">Polished UI Kit</h3>
+          <p class="text-slate-300 mt-2">Buttons, cards, modals, accordions, and more crafted with Tailwind utilities.</p>
+        </article>
+        <article class="p-6 rounded-3xl border border-slate-800 bg-gradient-to-b from-slate-900/60 to-slate-900/30">
+          <div class="h-10 w-10 rounded-xl bg-slate-800 flex items-center justify-center mb-4">⚡</div>
+          <h3 class="font-semibold text-lg">Fast by default</h3>
+          <p class="text-slate-300 mt-2">Semantic HTML, no heavy frameworks, optimized images, and lazy-loading.</p>
+        </article>
+        <article class="p-6 rounded-3xl border border-slate-800 bg-gradient-to-b from-slate-900/60 to-slate-900/30">
+          <div class="h-10 w-10 rounded-xl bg-slate-800 flex items-center justify-center mb-4">🧩</div>
+          <h3 class="font-semibold text-lg">Drop-in sections</h3>
+          <p class="text-slate-300 mt-2">Mix and match hero, features, pricing, FAQ, and testimonials.</p>
+        </article>
+        <article class="p-6 rounded-3xl border border-slate-800 bg-gradient-to-b from-slate-900/60 to-slate-900/30">
+          <div class="h-10 w-10 rounded-xl bg-slate-800 flex items-center justify-center mb-4">🔐</div>
+          <h3 class="font-semibold text-lg">Accessible</h3>
+          <p class="text-slate-300 mt-2">Keyboard-friendly components and proper ARIA attributes out of the box.</p>
+        </article>
+        <article class="p-6 rounded-3xl border border-slate-800 bg-gradient-to-b from-slate-900/60 to-slate-900/30">
+          <div class="h-10 w-10 rounded-xl bg-slate-800 flex items-center justify-center mb-4">🛠️</div>
+          <h3 class="font-semibold text-lg">Easy to extend</h3>
+          <p class="text-slate-300 mt-2">Well-organized classes and minimal JS for quick customization.</p>
+        </article>
+        <article class="p-6 rounded-3xl border border-slate-800 bg-gradient-to-b from-slate-900/60 to-slate-900/30">
+          <div class="h-10 w-10 rounded-xl bg-slate-800 flex items-center justify-center mb-4">🚀</div>
+          <h3 class="font-semibold text-lg">Production-ready</h3>
+          <p class="text-slate-300 mt-2">Clean markup with meta tags and social previews included.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Demo -->
+    <section id="demo" class="container-pad py-20">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold">Show, don’t tell</h2>
+          <p class="text-slate-300 mt-3">Embed a short product video or animated GIF to highlight the core flow. The frame below is ready for your media.</p>
+          <ul class="mt-6 space-y-2 text-slate-300">
+            <li class="flex gap-2"><span>✓</span> Drag-and-drop sections</li>
+            <li class="flex gap-2"><span>✓</span> Reusable UI patterns</li>
+            <li class="flex gap-2"><span>✓</span> Easy theming with Tailwind</li>
+          </ul>
+          <div class="mt-8 flex gap-3">
+            <a href="#pricing" class="px-5 py-3 rounded-2xl bg-brand text-slate-900 font-semibold">Start free</a>
+            <button id="openModal" class="px-5 py-3 rounded-2xl border border-slate-800 hover:border-brand/60">Quick tour</button>
+          </div>
+        </div>
+        <div>
+          <div class="aspect-video rounded-3xl border border-slate-800 overflow-hidden">
+            <video controls poster="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1600&auto=format&fit=crop" class="w-full h-full object-cover">
+              <source src="" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <p class="text-xs text-slate-400 mt-2">Tip: compress videos with HandBrake and serve in MP4 + WebM for best compatibility.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="container-pad py-20">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold">Simple, transparent pricing</h2>
+        <p class="text-slate-300 mt-3">Start free, upgrade when you’re ready. Cancel anytime.</p>
+
+        <div class="mt-6 inline-flex items-center gap-3 rounded-full border border-slate-800 px-3 py-1.5">
+          <span class="text-sm">Monthly</span>
+          <button id="billingToggle" class="relative inline-flex items-center w-16 h-7 rounded-full bg-slate-800">
+            <span class="sr-only">Toggle billing period</span>
+            <span id="knob" class="absolute left-1 top-1 h-5 w-5 rounded-full bg-white transition"></span>
+          </button>
+          <span class="text-sm">Yearly <span class="text-brand">(save 20%)</span></span>
+        </div>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-6">
+        <!-- Plan -->
+        <div class="p-6 rounded-3xl border border-slate-800 bg-slate-900/40">
+          <h3 class="text-xl font-semibold">Starter</h3>
+          <p class="text-slate-400 mt-1">For trying things out</p>
+          <p class="mt-6 text-4xl font-extrabold"><span class="price" data-monthly="$0" data-yearly="$0">$0</span><span class="text-sm text-slate-400">/mo</span></p>
+          <ul class="mt-6 space-y-2 text-slate-300">
+            <li>✓ 1 project</li>
+            <li>✓ Community support</li>
+            <li>✓ Basic components</li>
+          </ul>
+          <a href="#" class="mt-8 inline-block w-full text-center px-4 py-3 rounded-xl border border-slate-800 hover:border-brand/60">Get started</a>
+        </div>
+        <div class="p-6 rounded-3xl border-2 border-brand bg-slate-900/60 shadow-glow">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-semibold">Pro</h3>
+            <span class="text-xs px-2 py-1 rounded-full bg-brand text-slate-900 font-bold">Popular</span>
+          </div>
+          <p class="text-slate-400 mt-1">For growing teams</p>
+          <p class="mt-6 text-4xl font-extrabold"><span class="price" data-monthly="$19" data-yearly="$15">$19</span><span class="text-sm text-slate-400">/mo</span></p>
+          <ul class="mt-6 space-y-2 text-slate-300">
+            <li>✓ Unlimited projects</li>
+            <li>✓ Priority support</li>
+            <li>✓ All components + templates</li>
+          </ul>
+          <a href="#" class="mt-8 inline-block w-full text-center px-4 py-3 rounded-xl bg-brand text-slate-900 font-semibold">Upgrade</a>
+        </div>
+        <div class="p-6 rounded-3xl border border-slate-800 bg-slate-900/40">
+          <h3 class="text-xl font-semibold">Enterprise</h3>
+          <p class="text-slate-400 mt-1">For bigger needs</p>
+          <p class="mt-6 text-4xl font-extrabold"><span class="price" data-monthly="$79" data-yearly="$63">$79</span><span class="text-sm text-slate-400">/mo</span></p>
+          <ul class="mt-6 space-y-2 text-slate-300">
+            <li>✓ SSO + advanced security</li>
+            <li>✓ Dedicated success manager</li>
+            <li>✓ Custom components</li>
+          </ul>
+          <a href="#" class="mt-8 inline-block w-full text-center px-4 py-3 rounded-xl border border-slate-800 hover:border-brand/60">Talk to sales</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="container-pad py-20">
+      <div class="grid lg:grid-cols-3 gap-6">
+        <figure class="p-6 rounded-3xl border border-slate-800 bg-slate-900/40">
+          <blockquote class="text-slate-200">“We shipped our MVP in a weekend. The components saved us weeks.”</blockquote>
+          <figcaption class="mt-4 flex items-center gap-3 text-sm text-slate-400">
+            <img class="h-8 w-8 rounded-full" src="https://i.pravatar.cc/64?img=33" alt="avatar" />
+            <div><span class="font-medium text-slate-200">Adaeze N.</span> • Product Designer</div>
+          </figcaption>
+        </figure>
+        <figure class="p-6 rounded-3xl border border-slate-800 bg-slate-900/40">
+          <blockquote class="text-slate-200">“Clean code, accessible, and easy to extend. Perfect starter.”</blockquote>
+          <figcaption class="mt-4 flex items-center gap-3 text-sm text-slate-400">
+            <img class="h-8 w-8 rounded-full" src="https://i.pravatar.cc/64?img=15" alt="avatar" />
+            <div><span class="font-medium text-slate-200">David O.</span> • Frontend Engineer</div>
+          </figcaption>
+        </figure>
+        <figure class="p-6 rounded-3xl border border-slate-800 bg-slate-900/40">
+          <blockquote class="text-slate-200">“Looks premium out of the box. Clients love it.”</blockquote>
+          <figcaption class="mt-4 flex items-center gap-3 text-sm text-slate-400">
+            <img class="h-8 w-8 rounded-full" src="https://i.pravatar.cc/64?img=4" alt="avatar" />
+            <div><span class="font-medium text-slate-200">Hassan M.</span> • Agency Owner</div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="container-pad py-20">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl md:text-4xl font-bold">Frequently asked questions</h2>
+        <p class="text-slate-300 mt-3">If you’re wondering about anything else, reach out via the form below.</p>
+      </div>
+      <div class="mt-8 divide-y divide-slate-800 rounded-2xl border border-slate-800">
+        <!-- Item -->
+        <details class="group p-5" name="faq">
+          <summary class="flex cursor-pointer items-center justify-between list-none">
+            <span class="font-medium">Can I use this template commercially?</span>
+            <span class="transition group-open:rotate-45">+</span>
+          </summary>
+          <p class="mt-3 text-slate-300">Yes. You can use, modify, and ship this in commercial projects. Attribution is appreciated but not required.</p>
+        </details>
+        <details class="group p-5" name="faq">
+          <summary class="flex cursor-pointer items-center justify-between list-none">
+            <span class="font-medium">Do I need Tailwind set up?</span>
+            <span class="transition group-open:rotate-45">+</span>
+          </summary>
+          <p class="mt-3 text-slate-300">No build step needed. This file uses the CDN version so you can start instantly. For production, consider installing Tailwind locally and purging unused styles.</p>
+        </details>
+        <details class="group p-5" name="faq">
+          <summary class="flex cursor-pointer items-center justify-between list-none">
+            <span class="font-medium">Is there a light mode?</span>
+            <span class="transition group-open:rotate-45">+</span>
+          </summary>
+          <p class="mt-3 text-slate-300">Yes—swap background/text classes or add a theme toggle. The structure supports both.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container-pad py-20">
+      <div class="grid lg:grid-cols-2 gap-10">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold">Let’s build something great</h2>
+          <p class="text-slate-300 mt-3">Send a message and we’ll reply within 24 hours.</p>
+          <div class="mt-6 space-y-2 text-slate-300 text-sm">
+            <div>📧 hello@miamifx.dev</div>
+            <div>📍 Remote • Worldwide</div>
+          </div>
+        </div>
+        <form id="contactForm" class="p-6 rounded-3xl border border-slate-800 bg-slate-900/40 grid gap-4" novalidate>
+          <div>
+            <label for="name" class="block text-sm mb-1">Name</label>
+            <input id="name" name="name" required class="w-full rounded-xl bg-slate-950 border border-slate-800 px-4 py-3 outline-none focus:ring-2 focus:ring-brand" placeholder="Your name" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm mb-1">Email</label>
+            <input id="email" name="email" type="email" required class="w-full rounded-xl bg-slate-950 border border-slate-800 px-4 py-3 outline-none focus:ring-2 focus:ring-brand" placeholder="you@example.com" />
+          </div>
+          <div>
+            <label for="message" class="block text-sm mb-1">Message</label>
+            <textarea id="message" name="message" rows="4" required class="w-full rounded-xl bg-slate-950 border border-slate-800 px-4 py-3 outline-none focus:ring-2 focus:ring-brand" placeholder="Tell us a bit about your project..."></textarea>
+          </div>
+          <p id="formNote" class="text-xs text-slate-400">We’ll only use your info to respond. No spam.</p>
+          <button type="submit" class="mt-2 px-5 py-3 rounded-2xl bg-brand text-slate-900 font-semibold">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800">
+    <div class="container-pad py-10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-tr from-brand to-brand-dark text-slate-900 font-black">FX</span>
+        <span>© <span id="year"></span> Miami Frontend Xperience Dev Studio Experts</span>
+      </div>
+      <nav class="flex items-center gap-4">
+        <a href="#features" class="hover:text-brand">Features</a>
+        <a href="#pricing" class="hover:text-brand">Pricing</a>
+        <a href="#faq" class="hover:text-brand">FAQ</a>
+        <a href="#contact" class="hover:text-brand">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="tourModal" class="fixed inset-0 z-50 hidden">
+    <div class="absolute inset-0 bg-black/70" aria-hidden="true"></div>
+    <div class="relative mx-auto mt-24 w-11/12 max-w-2xl rounded-3xl border border-slate-800 bg-slate-950 p-6">
+      <div class="flex items-center justify-between">
+        <h3 class="text-xl font-semibold">Quick Tour</h3>
+        <button id="closeModal" class="h-10 w-10 rounded-xl border border-slate-800 hover:border-brand/60" aria-label="Close modal">×</button>
+      </div>
+      <div class="mt-4 space-y-3 text-slate-300">
+        <p>• Edit the hero copy to match your product.</p>
+        <p>• Swap screenshots in the hero and demo sections.</p>
+        <p>• Configure pricing and toggle behavior in <code>data-*</code> attributes.</p>
+      </div>
+      <div class="mt-6 text-right">
+        <button id="okModal" class="px-4 py-2 rounded-xl bg-brand text-slate-900 font-semibold">Got it</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobileBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Pricing toggle (monthly/yearly)
+    const toggle = document.getElementById('billingToggle');
+    const knob = document.getElementById('knob');
+    let yearly = false;
+    const updatePrices = () => {
+      document.querySelectorAll('.price').forEach(el => {
+        const m = el.getAttribute('data-monthly');
+        const y = el.getAttribute('data-yearly');
+        el.textContent = yearly ? y : m;
+      });
+    };
+    toggle?.addEventListener('click', () => {
+      yearly = !yearly;
+      knob.style.transform = yearly ? 'translateX(36px)' : 'translateX(0)';
+      updatePrices();
+    });
+    updatePrices();
+
+    // Modal controls
+    const openModal = document.getElementById('openModal');
+    const closeModal = document.getElementById('closeModal');
+    const okModal = document.getElementById('okModal');
+    const tourModal = document.getElementById('tourModal');
+    const toggleModal = (show) => tourModal.classList[show ? 'remove' : 'add']('hidden');
+    openModal?.addEventListener('click', () => toggleModal(true));
+    closeModal?.addEventListener('click', () => toggleModal(false));
+    okModal?.addEventListener('click', () => toggleModal(false));
+
+    // Contact form (simple client-side validation + dummy handler)
+    const form = document.getElementById('contactForm');
+    const note = document.getElementById('formNote');
+    form?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const name = data.get('name').trim();
+      const email = data.get('email').trim();
+      const message = data.get('message').trim();
+      if (!name || !email || !message) {
+        note.textContent = 'Please fill out all fields correctly.';
+        note.classList.add('text-red-400');
+        return;
+      }
+      // Simulate success
+      note.textContent = 'Thanks! Your message has been sent.';
+      note.classList.remove('text-red-400');
+      note.classList.add('text-green-400');
+      form.reset();
+    });
+  </script>
+</body>
+</html>
