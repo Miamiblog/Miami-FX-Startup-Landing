@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post | Miami FX</title>
+  <meta name="author" content="Miami Frontend Xperience Dev Studio Experts">
+  <meta name="description" content="Read detailed articles and insights from Miami FX on frontend development, design, and digital solutions.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-gray-200">
+
+  <!-- Header -->
+  <header class="bg-slate-800 p-6 shadow-lg flex items-center justify-between">
+    <h1 class="text-2xl font-bold text-cyan-400">Miami FX Blog</h1>
+    <nav>
+      <a href="index.html" class="hover:text-cyan-300 px-3">Home</a>
+      <a href="blog.html" class="hover:text-cyan-300 px-3">Back to Blog</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative w-full h-72 overflow-hidden">
+    <img src="https://picsum.photos/1200/600" alt="Blog Hero" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center">
+      <h2 class="text-4xl font-bold text-cyan-300 mb-2" data-aos="fade-up">Blog Post Title</h2>
+      <p class="text-gray-300" data-aos="fade-up" data-aos-delay="200">By Author Name · Jan 1, 2025</p>
+    </div>
+  </section>
+
+  <!-- Hero Side-by-Side -->
+  <section class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center">
+    <div data-aos="fade-right">
+      <img src="https://picsum.photos/800/500" alt="Blog Hero" class="rounded-xl shadow-lg">
+    </div>
+    <div data-aos="fade-left">
+      <h2 class="text-4xl font-bold text-cyan-300 mb-4">Alternate Blog Post Title</h2>
+      <p class="text-gray-400 mb-2">By Author Name</p>
+      <p class="text-gray-400">Published on Feb 1, 2025</p>
+    </div>
+  </section>
+
+  <!-- Article Content -->
+  <main class="max-w-3xl mx-auto p-6 leading-relaxed">
+    <article data-aos="fade-up">
+      <h3 class="text-2xl font-semibold text-cyan-400 mb-4">Intro Section</h3>
+      <p class="mb-6">This is a reusable blog post template. Replace this text with your actual blog content. Add as many paragraphs, lists, or images as you like to make the post engaging and SEO-friendly.</p>
+
+      <h3 class="text-xl font-semibold text-cyan-300 mb-3">Subheading</h3>
+      <p class="mb-6">Use this section for detailed explanations. Insert images, code snippets, or call-to-action buttons.</p>
+
+      <img src="https://picsum.photos/800/400" alt="Sample" class="rounded-xl mb-6 shadow-lg">
+
+      <h3 class="text-xl font-semibold text-cyan-300 mb-3">Another Section</h3>
+      <p class="mb-6">Wrap up your blog post here. You can add highlights, key takeaways, and links to related resources.</p>
+    </article>
+
+    <!-- Share Buttons -->
+    <div class="flex gap-4 mt-10" data-aos="fade-up">
+      <a href="#" class="bg-cyan-500 text-slate-900 px-4 py-2 rounded-lg font-semibold hover:bg-cyan-400 transition">Share on Twitter</a>
+      <a href="#" class="bg-cyan-500 text-slate-900 px-4 py-2 rounded-lg font-semibold hover:bg-cyan-400 transition">Share on LinkedIn</a>
+    </div>
+  </main>
+
+  <!-- Related Posts -->
+  <section class="bg-slate-800 mt-16 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-2xl font-bold text-cyan-400 mb-8 text-center">Related Posts</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-slate-700 p-4 rounded-xl shadow-md" data-aos="fade-up">
+          <img src="https://picsum.photos/400/200" alt="Related 1" class="rounded-md mb-3">
+          <h4 class="text-lg font-semibold text-cyan-300 mb-2">Post Title 1</h4>
+          <a href="blog-post.html" class="text-cyan-400 hover:underline">Read More →</a>
+        </div>
+        <div class="bg-slate-700 p-4 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="150">
+          <img src="https://picsum.photos/400/201" alt="Related 2" class="rounded-md mb-3">
+          <h4 class="text-lg font-semibold text-cyan-300 mb-2">Post Title 2</h4>
+          <a href="blog-post.html" class="text-cyan-400 hover:underline">Read More →</a>
+        </div>
+        <div class="bg-slate-700 p-4 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://picsum.photos/400/202" alt="Related 3" class="rounded-md mb-3">
+          <h4 class="text-lg font-semibold text-cyan-300 mb-2">Post Title 3</h4>
+          <a href="blog-post.html" class="text-cyan-400 hover:underline">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-center py-6 mt-10 border-t border-slate-700">
+    <p>&copy; 2025 Miami Frontend Xperience Dev Studio Experts. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
